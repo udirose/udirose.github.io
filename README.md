@@ -1,2 +1,1 @@
-# udirose.github.io
- My Website
+# MyWebsite
