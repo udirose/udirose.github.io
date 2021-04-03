@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>My Website</title>
 </head>
-<body>
-    <div class = "nav">
+<body class = "text-center">
+    <div class = "navig">
         <ul>
             <li><a href = "https://www.linkedin.com/in/udirose" target = "_blank" rel="noreferrer noopener"><img src = "images/LI-Logo.png" alt = "linkedin" width = "133" height = "32"></a></li>
             <li><a href = "https://github.com/udirose" target = "_blank" rel="noreferrer noopener"><img src = "images/GitHub-Mark-64px.png" alt = "github" width = "46" height = "46"></a></li>
@@ -30,116 +31,88 @@
         <br>
         <h3>My Websites</h3>
         <br>
-        <h4><a href = "http://ec2-3-19-211-127.us-east-2.compute.amazonaws.com/~udirose/NewsWebsite/news.php" target = "_blank" rel="noreferrer noopener">Newsies</a></h4>
-        <br>
-        <h4><a href = "http://ec2-3-19-211-127.us-east-2.compute.amazonaws.com:3456/client.html" target = "_blank" rel="noreferrer noopener">Chat</a></h4>
-        <br>
-        <h4><a href = "http://ec2-3-19-211-127.us-east-2.compute.amazonaws.com/~udirose/Calendar/calendar.html" target = "_blank" rel="noreferrer noopener">Calendar</a></h4>
-        <br>
-        <h4><a href = "http://ec2-3-19-211-127.us-east-2.compute.amazonaws.com/~udirose/Fileshare/Fileshare.php" target = "_blank" rel="noreferrer noopener">FileZara</a></h4>
+        
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "col">
+                    <!--Newsies-->
+                    <div class="card" style="height: 14rem; background-color:#A3EBB1; color: black;">
+                        <div class="card-body">
+                            <h5 class="card-title">Newsies</h5>
+                            <p class="card-text">A news forum website made with HTML CSS JS JQuery PHP and MySQL</p>
+                            <a href="http://ec2-3-19-211-127.us-east-2.compute.amazonaws.com/~udirose/NewsWebsite/news.php" target = "_blank" rel="noreferrer noopener" class="btn btn-primary stretched-link">Launch</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Chat-->
+                <div class = "col">
+                    <div class="card" style="height: 14rem; background-color: #8338EC; color: white;">
+                        <div class="card-body">
+                        <h5 class="card-title">Chat Website</h5>
+                        <p class="card-text">A fully functioning chat client made with HTML CSS JS NodeJS and SocketIO</p>
+                        <a href="http://ec2-3-19-211-127.us-east-2.compute.amazonaws.com:3456/client.html" target = "_blank" rel="noreferrer noopener" target = "_blank" rel="noreferrer noopener" class="btn btn-primary stretched-link">Launch</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Calendar-->
+                <div class = "col">
+                    <div class="card" style="height: 14rem; background-color: #FD8D8D; color:black;">
+                        <div class="card-body">
+                        <h5 class="card-title">Calendar</h5>
+                        <p class="card-text">Calendar built with HTML CSS JS PHP and MySQL</p>
+                        <a href="http://ec2-3-19-211-127.us-east-2.compute.amazonaws.com/~udirose/Calendar/calendar.html" target = "_blank" rel="noreferrer noopener" target = "_blank" rel="noreferrer noopener" class="btn btn-primary stretched-link">Launch</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Fileshare-->
+                <div class = "col">
+                    <div class="card" style="height: 14rem; background-color: #ffa343; color:black;">
+                        <div class="card-body">
+                        <h5 class="card-title">FileZara</h5>
+                        <p class="card-text">Filesharing Website built with HTML CSS and PHP. Use the username "udi"</p>
+                        <a href="http://ec2-3-19-211-127.us-east-2.compute.amazonaws.com/~udirose/Fileshare/Fileshare.php" target = "_blank" rel="noreferrer noopener" target = "_blank" rel="noreferrer noopener" class="btn btn-primary stretched-link">Launch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
     </div>
     
     
     <div class = "resume">
         <br>
         <h3>My Resume</h3>
+        <br>
+        <!--https://pdfjs.express/blog/how-embed-pdf-in-html-website-->
+        <div>
+            <object
+              data='resume.pdf'
+              type="application/pdf"
+              width="850"
+              height="1150"
+            >
+      
+              <iframe
+                src='resume.pdf'
+                width="850"
+                height="1150"
+              >
+              <p>This browser does not support PDF!</p>
+              </iframe>
+      
+            </object>
+          </div>
 
 
-<h4>Education</h4>
-<hr>
-
-
-<h5>Washington University in St. Louis                         Expected Graduation May 2023</h5> 
-<ul>
-    <li>Candidate of Bachelor of Science in Computer Science</li>
-    <li>GPA: 3.78/4.0</li>
-    <li>Relevant coursework: Introduction to Computer Science, Logic and Discrete Mathematics, Data Structures and Algorithms, Computer Engineering, Rapid Prototyping and Creative Programming</li>
-</ul>                                                                          
-
-
-<h4>Skills</h4>
-<hr>
-<ul>
-    <li>Programming: Java, HTML, CSS, Linux, Git, AWS, PHP, MySQL, JS, AJAX(In progress: Python, React)</li>
-    <li>Computer: Microsoft Excel</li>
-    <li>Language: Hebrew - Conversational</li>
-</ul>
-
-
-
-<h4>Experience</h4>
-<hr>
-
-
-<h5>Computer Science Undergraduate Teaching Assistant | St. Louis, MO                  September 2020 - Jan 2021</h5>
-<ul>
-    <li>Hosting office hours to aid students in completing their projects</li>
-    <li>Assessing students’ work in order to make sure they complete the projects correctly</li>
-    <li>Running a personal studio group with 6 students weekly guiding them through coding problems that use the concepts learned in the course</li>
-</ul>
-
-
-<h5>Developers Student Club WashU | Member | St. Louis, MO                                       September 2019 - Current</h5>
-<ul>
-    <li>Brainstormed projects with fellow members to help nonprofits and small businesses in the St. Louis Area</li>
-    <li>Learned about Google Cloud technologies through workshops hosted by the club</li>
-    <li>Worked on a redesign for Dream Factory of St. Louis’ website through the club with Google technologies such as Angular (see below)</li>
-</ul>
-
-<h5>Irwin R. Rose & Company | Property Management Intern | Indianapolis, IN         June 2019 - August 2020</h5>
-<ul>
-    <li>Installed a new suite of software remotely on 20 computers among the properties</li>
-    <li>Assisted in migrating users from the old company database to the Microsoft Azure system</li>
-    <li>Insured accuracy of invoices by carefully entering them into the Accounts Payable system and computing the total values on paper tape every week</li>
-    <li>Aided in processing and filing 300+ move-outs from the properties</li>\
-    <li>Streamlined the process for Major Improvements tracking by making Excel worksheets for the properties Projects</li>
-</ul>
-
-<h4>Projects</h4>
-<hr>
-
-
-<h5>Newsies - Project for CS Class Rapid Prototyping and Creative Programming                          February 2021</h5>
-<ul>
-    <li>Created a News/Forum website from scratch using HTML, CSS, PHP, and MySQL with another partner</li>
-    <li>Full login and registration system created with PHP which interacts with MySQL database</li>
-    <li>Ability to create posts associated with users and have comments on those posts</li>
-</ul>
-
-
-<h5>Calendar Website - Project for CS Class Rapid Prototyping and Creative Programming                          March 2021</h5>
-<ul>
-    <li>Created a fully fledged out Calendar website with a partner</li>
-    <li>Uses Javascript and JQuery to never reload the page, even upon account creation, logging out, adding new events, etc</li>
-    <li>Used AJAX requests to communicate with PHP and MySQL to display and edit data without ever reloading the paged</li>
-</ul>
-
-
-<h5>Filesharing Website - Project for CS Class Rapid Prototyping and Creative Programming  February 2021</h5>
-<ul>
-    <li>Created Filesharing website from scratch using HTML, CSS, and PHP</li>
-    <li>Minor login system created with PHP</li>
-    <li>Capability to upload and view files associated with a username, implemented with PHP</li>
-</ul>
-
-
-<h5>Dream Factory of St. Louis — Website Redesign (Developers Student Club)                   Sept 2019 - Jan 2020  </h5>
-<ul>
-    <li>Worked with a group of 7 other students to redesign the website for the St. Louis Dream Factory chapter, an organization that grants wishes to children with chronic and non-terminal illnesses</li>
-    <li>Collaborated with peers and worked in Angular to overhaul the website</li>
-    <li>Used HTML, CSS, and Javascript to create the navigation bar and the child referral form</li>
-</ul>                                              
-
-
-
-
-
-<br>
 </div>
 
 
 
 
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
