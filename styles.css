@@ -1,7 +1,7 @@
 @font-face
     {
         font-family: 'avenir';
-        src: url(../fonts/AvenirNextLTPro-Regular.otf);
+        src: url(fonts/AvenirNextLTPro-Regular.otf);
         font-style: normal;
         font-weight: 100;
     }
@@ -9,7 +9,7 @@
 @font-face
     {
         font-family: 'cascadia';
-        src: url(../fonts/CascadiaCode-Regular.otf);
+        src: url(fonts/CascadiaCode-Regular.otf);
         font-style: normal;
         font-weight: 100;
     }
